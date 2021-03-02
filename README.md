@@ -17,7 +17,8 @@ Project repository C3a peri-infarct study
   * Adapt ```proc_tools.py``` to your folder structure
   * Run ```python 01_dilate_mask_process.py; python 02_apply_xfm_process.py; python 03_create_seed_rois_process_npflip.py```sequentially
 
-7. Use the [iterativeRun_MA_peri-infarct_ROIs.py](https://github.com/aswendtlab/Project_C3a_peri-infarct/blob/main/iterativeRun_MA_peri-infarct_ROIs.py) script to extract 
+7. Use the [iterativeRun_MA_peri-infarct_ROIs.py](https://github.com/aswendtlab/Project_C3a_peri-infarct/blob/main/iterativeRun_MA_peri-infarct_ROIs.py) script to extract diffusion measures (FA, AD, RD, MD) for each atlas region
+
 8. Retrieve the atlas region-specific diffusion measures from the stored .txt files
 > e.g. C3a_PT_8wks_T2w_DTI/MRI_proc_data/P56/Treatment_C3a/GV_T3_12_1_1_8_20191008_102322/DTI/DSI_studio/GV_T3_12_1_1_8_20191008_102322_T2w_Anno_DTI_mod_peri_scaled_fa0.txt 
 
