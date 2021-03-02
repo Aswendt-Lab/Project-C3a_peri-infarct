@@ -10,7 +10,7 @@ Project repository C3a peri-infarct study
 
 3. Run AIDAmri pre- and postprocessing steps for T2 and DTI data, see [manual](https://github.com/aswendtlab/AIDAmri/blob/master/manual.pdf)
 
-5. Extract the graph theoretical measure global density using Matlab
+5. Extract the graph theoretical measure global density using AIDAconnect and Matlab
   * ```mergeDTIdata_input.m and plotGlobalParameter(inputDTI, graphCell, 'Density')```
   
 6. Run peri-infarct specific Python scripts (4.1_ROI_analysis in AIDAmri)
