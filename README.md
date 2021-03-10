@@ -15,7 +15,8 @@ Project repository C3a peri-infarct study
   
 6. Run peri-infarct specific Python scripts (4.1_ROI_analysis in AIDAmri)
   * Adapt ```proc_tools.py``` to your folder structure
-  * Run ```python 01_dilate_mask_process.py; python 02_apply_xfm_process.py; python 03_create_seed_rois_process_npflip.py```sequentially
+  * Run ```python proc_tools.py; python 01_dilate_mask_process.py; python 02_apply_xfm_process.py; python 03_create_seed_rois_process_npflip.py; python 04_examine_rois```sequentially
+  * The output of ```04_examine_rois```is ROIs_count_voxels.txt with the number of voxels inside the peri-infarct mask per brain region (Allen Mouse Brain Atlas label number). This is used to determine which regions to include in the analysis, here: ACA, SSp-ll/m/ul, SSs, MOp, MOs, and GU: ![image](https://user-images.githubusercontent.com/79273576/110662916-3f461f80-81c6-11eb-890d-9f45d7b22390.png)
 
 7. Use the [iterativeRun_MA_peri-infarct_ROIs.py](https://github.com/aswendtlab/Project_C3a_peri-infarct/blob/main/iterativeRun_MA_peri-infarct_ROIs.py) script to extract diffusion measures (FA, AD, RD, MD) for each atlas region
 
